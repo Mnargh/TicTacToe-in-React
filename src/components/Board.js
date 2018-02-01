@@ -10,14 +10,14 @@ class Board extends Component {
     };
   }
 
+  renderCell(value) {
+    return <Cell value={value} />
+  };
 
 
   render() {
     return (
-
-      <div><Cell value={1} />
-    </div>
-
+      <div>{this.renderCell()}</div>
     );
   }
 
