@@ -12,7 +12,7 @@ class Cell extends Component {
 
   render() {
     return (
-      <div className="Cell"> Cell </div>
+      <div className="cell"> Cell </div>
     );
   }
 
