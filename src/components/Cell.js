@@ -17,11 +17,9 @@ class Cell extends Component {
     })
   };
 
-
-
   render() {
     return (
-      <div className="cell" onClick={() => this.handleclick() }>This cell is revealed equals {this.state.revealed.toString()}</div>
+      <div className="cell" onClick={() => this.handleclick() }>Cell number: {this.props.value} Revealed?: {this.state.revealed.toString()}</div>
     );
   }
 

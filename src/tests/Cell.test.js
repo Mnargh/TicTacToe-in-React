@@ -7,14 +7,14 @@ describe ('testing Cell component', () => {
   // let wrapper;
   // beforeEach(() => { wrapper = shallow(<App />); });
 
-  const cell = shallow(<Cell />);
+  const cell = shallow(<Cell value={1}/>);
 
   it('Cell renders as a div', () => {
     expect(cell.type()).toBe('div');
   });
 
   it('Cell div can have text of the cell state inside', () => {
-    expect(cell.text()).toBe('This cell is revealed equals false');
+    expect(cell.text()).toBe('Cell number: 1 Revealed?: false');
   });
 
   it ('Cell initialises as unrevealed', () => {

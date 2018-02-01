@@ -6,12 +6,17 @@ class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
+
     };
   }
 
+
+
   render() {
     return (
-      <div><Cell /><Cell /><Cell /></div>
+
+      <div><Cell value={1} />
+    </div>
 
     );
   }
