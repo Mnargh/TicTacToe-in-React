@@ -8,8 +8,11 @@ class Cell extends Component {
       revealed: false
       // bomb = false
     };
-
   }
+
+  // handleclick() {
+  //
+  // };
 
 
 
