@@ -10,15 +10,15 @@ class Cell extends Component {
     };
   }
 
-  // handleclick() {
-  //
-  // };
+  handleclick() {
+    this.state.revealed = true;
+  };
 
 
 
   render() {
     return (
-      <div className="cell">This cell is revealed equals {this.state.revealed.toString()}</div>
+      <div className="cell" onClick={() => this.handleclick() }>This cell is revealed equals {this.state.revealed.toString()}</div>
     );
   }
 

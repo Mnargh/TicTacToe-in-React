@@ -21,6 +21,10 @@ describe ('testing Cell component', () => {
     expect(cell.state("revealed")).toBe(false);
   });
 
+  it ('Cell state changes to revealed when clicked', () => {
+    cell.simulate('click', { revealCell() {} });
+    expect(cell.state("revealed")).toBe(true);
+  });
 
 
 
