@@ -7,23 +7,23 @@ describe ('testing Cell component', () => {
   // let wrapper;
   // beforeEach(() => { wrapper = shallow(<App />); });
 
-  const cell = shallow(<Cell value={1}/>);
+  const cell = shallow(<Cell value={null}/>);
 
   it('Cell renders as a div', () => {
     expect(cell.type()).toBe('div');
   });
 
-  it('Cell div can have text of the cell state inside', () => {
-    expect(cell.text()).toBe('Cell number: 1 Revealed?: false');
+  it('Cell div is empty when initially rendered', () => {
+    expect(cell.text()).toEqual('');
   });
 
-  it ('Cell initialises as unrevealed', () => {
-    expect(cell.state("revealed")).toBe(false);
+  it ('Cell initialises with null value', () => {
+    expect(cell.state("value")).toBe(null);
   });
 
-  it ('Cell state changes to revealed when clicked', () => {
+  it ('Cell is filled with a symbol when clicked', () => {
     cell.simulate('click', { revealCell() {} });
-    expect(cell.state("revealed")).toBe(true);
+    expect(cell.state("value")).toBe("X");
   });
 
 

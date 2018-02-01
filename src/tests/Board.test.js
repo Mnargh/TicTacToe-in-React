@@ -12,7 +12,7 @@ describe ("Testing Board component", () => {
     expect(board.type()).toBe('div');
   })
 
-  it("Renders 3 cells inside the board", () => {
+  it("Renders a cell inside the board", () => {
     expect(board.find('Cell')).toHaveLength(1)
   })
   //

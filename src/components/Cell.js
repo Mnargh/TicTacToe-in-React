@@ -5,7 +5,7 @@ class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      revealed: false
+      value: null
       // bomb = false
     };
   }
@@ -13,13 +13,13 @@ class Cell extends Component {
 
   handleclick() {
     this.setState({
-      revealed: true
+      value: "X"
     })
   };
 
   render() {
     return (
-      <div className="cell" onClick={() => this.handleclick() }>Cell number: {this.props.value} Revealed?: {this.state.revealed.toString()}</div>
+      <div className="cell" onClick={() => this.handleclick() }>{this.props.value}</div>
     );
   }
 

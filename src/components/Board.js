@@ -17,7 +17,7 @@ class Board extends Component {
 
   render() {
     return (
-      <div>{this.renderCell()}</div>
+      <div>{this.renderCell(null)}</div>
     );
   }
 
