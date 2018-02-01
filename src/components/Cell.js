@@ -19,7 +19,7 @@ class Cell extends Component {
 
   render() {
     return (
-      <div className="cell" onClick={() => this.handleclick() }>{this.props.value}</div>
+      <div className="cell" onClick={() => this.handleclick() }>{this.state.value}</div>
     );
   }
 
