@@ -28,6 +28,8 @@ describe ('testing Cell component', () => {
 
 
 
+
+
   //
   // it('Cell div hasMine default state is false ', () => {
   //   const cell = shallow(<Cell />)

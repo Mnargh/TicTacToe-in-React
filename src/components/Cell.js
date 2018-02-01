@@ -10,8 +10,11 @@ class Cell extends Component {
     };
   }
 
+
   handleclick() {
-    this.state.revealed = true;
+    this.setState({
+      revealed: true
+    })
   };
 
 
