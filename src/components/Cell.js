@@ -5,14 +5,17 @@ class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // revealed = false
+      revealed: false
       // bomb = false
     };
+
   }
+
+
 
   render() {
     return (
-      <div className="cell"> Cell </div>
+      <div className="cell">This cell is revealed equals {this.state.revealed.toString()}</div>
     );
   }
 
