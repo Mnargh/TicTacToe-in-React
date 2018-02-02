@@ -12,7 +12,10 @@ class Board extends Component {
   }
 
   renderCell(value) {
-    return <Cell value={value} />
+    return <Cell
+      value={value}
+      // onClick={() => this.handleClick()}
+     />
   };
 
   generateColumn(columns){

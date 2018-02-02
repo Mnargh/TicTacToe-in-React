@@ -13,7 +13,7 @@ describe ("Testing Board component", () => {
   })
 
   it("Renders a cell inside the board", () => {
-    expect(board.find('Cell')).toHaveLength(1)
+    expect(board.find('Cell')).toHaveLength(9)
   })
   //
   // it("Renders state as column of cells", () => {
