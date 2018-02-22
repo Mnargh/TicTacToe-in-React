@@ -12,12 +12,12 @@ describe ("Testing Board component", () => {
     expect(board.type()).toBe('div');
   })
 
-  it("Renders a cell inside the board", () => {
-    expect(board.find('Cell')).toHaveLength(9)
-  })
-  //
+  // it("Renders a cell inside the board", () => {
+  //   expect(board.find('Cell')).toHaveLength(9)
+  // })
+  
   // it("Renders state as column of cells", () => {
-  //   expect(board.state("grid")).toEqual([<Cell />, <Cell />, <Cell />]);
+  //   expect(board.state("board")).toEqual([[<Cell />, <Cell />, <Cell />], [<Cell />, <Cell />, <Cell />], [<Cell />, <Cell />, <Cell />]]);
   // })
 
 

@@ -6,11 +6,13 @@ class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // render grid
-      board: this.generateGrid(3, 3)
+      
+      // board: this.generateGrid(3, 3)
+      board: Array(3).fill(Array(3).fill(null))
     }
   }
 
+  
   renderCell(value) {
     return <Cell
       value={value}
