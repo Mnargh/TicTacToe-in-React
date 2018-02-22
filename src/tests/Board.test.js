@@ -12,13 +12,23 @@ describe ("Testing Board component", () => {
     expect(board.type()).toBe('div');
   })
 
-  // it("Renders a cell inside the board", () => {
-  //   expect(board.find('Cell')).toHaveLength(9)
-  // })
+  it("Renders 9 cells inside the board", () => {
+    expect(board.find('Cell')).toHaveLength(9)
+  })
   
-  // it("Renders state as column of cells", () => {
-  //   expect(board.state("board")).toEqual([[<Cell />, <Cell />, <Cell />], [<Cell />, <Cell />, <Cell />], [<Cell />, <Cell />, <Cell />]]);
-  // })
+  it("Starts with a state of an empty array", () => {
+    expect(board.state("board")).toEqual([
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]);
+  })
 
 
 });
