@@ -21,8 +21,15 @@ describe ('testing Cell component', () => {
     expect(cell.state("value")).toBe(null);
   });
 
+  it ('Cell can respond to being clicked on', () => {
+    const handleClick = jest.fn();
+    cell.simulate('click', () => {
+      expect(handleClick).toHaveBeenCalled();
+    });
+  });
+
   it ('Cell is filled with a symbol when clicked', () => {
-    cell.simulate('click', { revealCell() {} });
+    cell.simulate('click');
     expect(cell.state("value")).toBe("X");
   });
 

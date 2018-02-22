@@ -11,7 +11,7 @@ class Cell extends Component {
   }
 
 
-  handleclick() {
+  handleClick() {
     this.setState({
       value: "X"
     })
@@ -19,7 +19,7 @@ class Cell extends Component {
 
   render() {
     return (
-      <div className="cell" onClick={() => this.handleclick() }>{this.state.value}</div>
+      <div className="cell" onClick={() => this.handleClick() }>{this.state.value}</div>
     );
   }
 
